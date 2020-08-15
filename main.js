@@ -32,7 +32,9 @@ client.on('message', message =>{
         client.commands.get('youtube').execute(message, args);
     } else if (command == 'paste'){
         client.commands.get('paste').execute(message, args);
-    }
+    } else if (command == 'instagram'){
+        client.commands.get('instagram').execute(message, args);
+    }  
 });
  
 client.login(process.env.token);
